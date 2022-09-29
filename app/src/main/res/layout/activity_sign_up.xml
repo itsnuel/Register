@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#000"
+    tools:context=".SignUpActivity">
+
+
+
+
+
+    <!-- email   -->
+
+    <TextView
+
+        android:id="@+id/titleLableTv"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameTil"
+        android:layout_alignTop="@+id/nameTil"
+        android:layout_alignEnd="@+id/nameTil"
+        android:layout_marginTop="-189dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="143dp"
+        android:text="SignUp"
+        android:textColor="@color/white" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="294dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/titleLableTv"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignBottom="@+id/passwordTil"
+        android:layout_marginStart="-127dp"
+        android:layout_marginTop="-42dp"
+        android:layout_marginBottom="298dp"
+        android:text="Sign up with on of following options"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordTil"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/background_edit"
+            android:inputType="textEmailAddress"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailTil"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:background="@drawable/background_edit"
+            android:inputType="textPersonName"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- password   -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/background_edit"
+            android:inputType="textPassword"
+
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--login Btn    -->
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordTil"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/background_edit"
+        android:text="Create Account"
+
+
+        />
+
+    <TextView
+        android:id="@+id/haveAccount"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpBtn"
+
+        android:layout_alignBottom="@+id/signUpBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="-92dp"
+        android:padding="5dp"
+        android:text="Already have an account? Log in"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/emailTil"
+        android:layout_alignStart="@+id/nameTil"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginTop="-47dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="111dp"
+        android:background="@drawable/bd_edit"
+        app:srcCompat="@drawable/ic__534129544" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameTil"
+        android:layout_alignEnd="@+id/nameTil"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginTop="-95dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/bd_edit"
+        app:srcCompat="@drawable/ic_apple_logo_svgrepo_com" />
+
+
+</RelativeLayout>
